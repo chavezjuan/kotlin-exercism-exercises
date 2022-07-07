@@ -1,6 +1,6 @@
-class Squares (val numbers: Int) {
+class Squares (val n: Int) {
 
-    fun squareOfSum(n : Int = numbers) : Int{
+    fun squareOfSum() : Int{
         var acc = 0;
         for (i in 1..n) {
             acc += i
@@ -8,7 +8,7 @@ class Squares (val numbers: Int) {
         return acc*acc
     }
 
-    fun sumOfSquares(n : Int = numbers) : Int {
+    fun sumOfSquares() : Int {
         var acc = 0;
         for (i in 1..n) {
             acc += i*i
@@ -16,7 +16,7 @@ class Squares (val numbers: Int) {
         return acc
     }
 
-    fun difference(n : Int = numbers) : Int{
-        return squareOfSum(n) - sumOfSquares(n)
+    fun difference() : Int{
+        return squareOfSum() - sumOfSquares()
     }
 }
